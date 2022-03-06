@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!------ feuille d style------>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media.css">
+  <!--------FONT AWESOME-------------->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+   integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+   crossorigin="anonymous">
+
+  <!--------- BOOTSTRAP---------->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <title>Portfolio de Naim</title>
+</head>
+
+<body>
+   <div class="toggle">
+     <input type="checkbox" class="checkbox" id="dark-mode"/>
+     <label for="dark-mode" class="label">
+       <i class="fas fa-moon"></i>
+       <i class="fas fa-sun"></i>
+       <div class="ball"></div>
+     </label>
+   </div>
+
+  <!----------------------------------header---------------------------->
+  <header>
+    <h1>Bienvenue sur mon portfolio</h1>
+    <hr>
+    <h2>Développeur web FULLSTACK</h2>
+    <div class="container">
+      <div class="clearfix">
+        <h2> A PROPOS de moi ...</h2>
+        <img src="./ressources/photo-1624823221364-8313c83ad314.jpg" class="col-md-6 float-md-start mb-2 ms-md-2"
+          alt="mon portrait">
+        <p>
+          Après 21 ans dans le domaine du frêt aérien, j'ai décidé de me consacrer à ma passion qui est
+          l'informatique.<br>
+          Pour cela, j'ai opté pour une reconversion professionnelle en intégrant une formation de<b> développeur /
+            intégrateur web et mobile</b>
+          en e-learning avec l'école <u>Digital Campus Live.</u><br>
+          Grâce à mes expériences, la gestion du stress et des priorités sont devenu mon point fort.
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <!--------------------------------main card---------------------------------------->
+  <main>
+    <div class="cardcompétences">
+      <div class="card-inner">
+        <div class="card-front">
+          <h3>Expériences</h3>
+        </div>
+        <div class="card-back">
+          <div class="formation">
+            <h4>Janvier 2021 à Décembre 2021<h4> <br>
+                <p class="para">
+                Formation développeur Web Full Stack chez Konexio</u>
+                </p>
+          </div>
+          <div class="formation">
+            <h4>Janvier 2006 à Septembre 2021</h4><br>
+            <h5>ICTS / SECURUS</h5>
+            <p class="para">
+              Coordinateur de sûreté fret aérien à Roissy Charles de Gaulles
+            </p>
+          </div>
+          <div class="formation">
+            <h4>Aout 2000 à Décembre 2005</h4><br>
+            <h5>ICTS / SECURUS</h5>
+            <p class="para">
+              Opérateur de sûreté fret aérien à Roissy Charles de Gaulles
+            </p>
+          </div>
+          <div class="formation2">
+            <h4>Mars 1999 à Juin 2000</h4><br>
+            <h5>DOLPHIN COMPUTER</h5>
+            <p class="para2">
+              Technicien de maintenance informatique<br>
+              (réparation, montage, assemblage)
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cardcompétences2">
+      <div class="card-inner2">
+        <div class="card-front2">
+          <h3>Compétences</h3>
+        </div>
+        <div class="card-back2">
+          <div class="title-front">
+            <h4>Front-end</h4>
+            <hr>
+          </div>
+          <div class="img-front">
+            <span id="logo">
+            <img src="ressources/html5.png" id="logo-html5" class ="logo" alt="logo-html">
+            <img src="./ressources/logo-bootstrap.png" id="logo-bootstrap" class="logo" alt="logo-bootstrap">
+            <img src="ressources/LOGO-CSS.png" id="logo-css3"  class="logo" alt="logo-css">
+            <img src="ressources/logo-JS.png" id="logo-js" class="logo" alt="logo-JS">
+            <img src="./ressources/react-1-logo-png-transparent.png" id ="logo-react" alt="logo-reactjs">
+          </span>
+          </div>
+            <div class="title-back">
+              <h4>back-end</h4>
+              <hr>
+            <div class="img-back">
+              <img src="./ressources/logo-php.png" id="logo-php" alt="logo-php">
+              <img src="./ressources/logo-react-native.jpg" id="logo-react-native" alt="logo-react-native">
+              <img src="./ressources/WordPress-Logo (1).png" id="logo-wordpress" alt="logo-wordpress">
+              <img src="./ressources/symfony.png" id="logo-symfony" alt="logo-symfony">
+            </div>
+            </div>
+            <div class="title-skills">
+              <h4>skills</h4>
+              <hr>
+              <div class="img-skills">
+                <img src="./ressources/logo vsc.jpg" id="logo-vsc" alt="logo-vsc">
+                <img src="./ressources/logo-git.png" id="logo-git" alt="logo-git">
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+ </main>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+     crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+@media screen and (max-width: 1200px) {   
+   .toggle {
+      margin-right: 25rem;
+    
+   }
+    header h1 {
+      font-size: 3.8em;
+      margin-right: 25%;
+    }
+    header h2 {
+        font-size: 2.8em;
+        margin-right: 25%;
+    }
+    .clearfix h2 {
+        font-size: 2.8em;
+        margin-right: 25%;
+    }
+    .clearfix img {
+        width: 70%!important;
+        height: 50%;
+    }
+    .clearfix p {
+        width: 100%;
+        margin-top: 75rem;
+        font-size: 2.5em;
+        margin-left: 50px;
+        padding: 1.8rem;
+    }
+}

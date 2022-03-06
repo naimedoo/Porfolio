@@ -1,0 +1,379 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 10px;
+}
+body {
+    
+    background: linear-gradient( #485563,#29323c);
+    transition: 0.2s linear;
+}
+.toggle {
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+}
+.checkbox {
+    display: none;
+}
+.label {
+    height: 30px;
+    width: 60px;
+    background: rgb(182,182,182);
+    padding: 5px 8px;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    transform: scale(1.2);
+    box-shadow: 2px 1px 1px #333;
+}
+.label .ball {
+    background: #eee;
+    border-radius: 50%;
+    height: 22px;
+    width: 22px;
+    position: absolute;
+    top: 2px;
+    left: 5px;
+    transform: translateX(0px);
+    transition: transform 0.3s cubic-bezier(.45,-1.12,.35,1.78);
+}
+.checkbox:checked + .label .ball {
+    transform: translateX(29px);
+}
+.fa-moon {
+    color: #333;
+}
+
+/* MODE NUIT */
+.dark {
+    background: rgb(37, 36, 36)/*linear-gradient(to left,#504f4fd2,rgb(8, 8, 8));*/
+}
+.dark hr {
+    background: white;
+}
+.dark header h1  {
+    color: white;
+}
+.dark header h2  {
+    color: white;
+}
+
+.dark .clearfix p {
+    color: white;
+    border: 2px solid white;
+}
+.dark .card-front  {
+   background: slategray;
+}
+.dark .card-back {
+    background: slategray;
+}
+.dark .card-front2  {
+    background: slategray;
+ }
+ .dark .card-back2 {
+     background: slategray;
+ }
+
+/* -------------------------- HEADER -----------------------------*/
+
+header h1 {
+    text-align: center;
+    padding: 2rem;
+    font-family:'lato, sans-serif';
+    font-weight: 600;
+    font-style: italic;
+    font-size: 4em;
+}
+header h2 {
+    text-align: center;
+    padding: 2rem;
+    font-family:'lato, sans-serif';
+    font-weight: 600;
+    font-size: 3em;
+
+}
+.clearfix h2 {
+    text-align: center;
+    font-size: 3em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 500;
+    margin-top: 2em;
+}
+.clearfix img {
+    border-radius: 50%;
+    padding: 15em;
+    
+    
+}
+.clearfix p {
+    font-size: 2em;
+    margin-top: 9em;
+    border: 2px solid #004e92;
+    margin-left: 55rem;
+    padding: 2rem;
+   
+}
+
+/* ------------------------ MAIN --------------------------------*/
+/*------------------------- carte 1------------------------------*/
+.cardcompétences  {
+    width: 600px;
+    height: 555px;
+    perspective: 700px;
+    margin-left: 2.5em;
+}
+.card-inner h3 {
+    font-size: 5em;
+    padding-top: 5em;
+    font-family: fantasy;
+}
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.7s;
+    transform-style: preserve-3d;
+}
+.card-front {
+    background-color:#004e92;
+    color: white;
+    border-radius: 20px;
+}
+.card-back {
+    background-color:#004e92;
+    color: white;
+    transform: rotateX(180deg);
+    border-radius: 20px;
+}
+.card-front, .card-back {
+    backface-visibility: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.formation  {
+    margin-top: 3px;
+    border-bottom: 2px solid white;
+}
+
+.formation h4 {
+    font-size: 2em;
+    font-weight: normal;
+}
+.formation h5 {
+    font-size: 2em;
+    padding-bottom: 5px;
+}
+.para {
+    font-size: 20px;
+    font-weight:lighter;
+    font-family: lato,sans-serif;
+    margin-bottom: 20px;
+}
+.formation2 h4 {
+    font-size: 2em;
+    font-weight: normal;
+    padding-top: 6px;
+}
+.formation2 h5 {
+    font-size: 2em;
+    padding-bottom: 3px;
+}
+.para2 {
+    font-size: 20px;
+    font-weight:initial;
+    font-family: lato,sans-serif;
+    margin-bottom: 20px;
+}
+
+.cardcompétences:hover .card-inner {
+    transform:rotateX(180deg);
+    transition: 0.8S ease-in-out;
+}
+/*------------------------------cartes 2------------------------*/
+
+.cardcompétences2 {
+    width: 600px;
+    height: 555px;
+    perspective: 4500px;
+    margin-right: 2.5em;
+}
+.card-inner2 h3 {
+    font-size: 5em;
+    padding-top: 5em;
+    font-family: fantasy;
+}
+.card-inner2 {
+    position: absolute;
+    width: 100%;
+    left: 100%;
+    margin-left: 60px;
+    bottom: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style:preserve-3d;
+}
+.card-front2 {
+    background-color: #004e92;
+    color: white;
+    border-radius: 20px;
+}
+.card-back2 {
+    background-color:#004e92;
+    color: white;
+    transform: rotateX(180deg);
+    border-radius: 20px;
+}
+#logo-html5 {
+    position: absolute;
+    left: 10px;
+    top: 70px;
+    box-shadow:  2px 0 5px 0 black;
+    height: 60px;
+    width: 60px;
+}
+.title-front h4 {
+    font-size: 2rem;
+    font-weight: 600;
+    font-style: italic;
+}
+#logo-css3  {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 70px;
+    left: 110px;
+    box-shadow:  2px 0 5px 0 black;
+}
+#logo-js {
+    position: absolute;
+    top: 70px;
+    left: 210px;
+    box-shadow:  2px 0 5px 0 black;
+    height: 60px;
+    width: 60px;
+}
+#logo-bootstrap {
+    position: absolute;
+    top: 70px;
+    left: 310px;
+    box-shadow: 2px 0 5px 0 black;
+    height: 60px;
+    width: 60px;
+}
+#logo-git {
+    position: absolute;
+    top: 70px;
+    left: 410px;
+    box-shadow:  2px 0 5px 0 black;
+    height: 60px;
+    width: 60px;
+    background-color: white;
+}
+#logo-react {
+    position: absolute;
+    top: 70px;
+    left: 410px;
+    box-shadow:  2px 0 5px 0 black;
+    height: 60px;
+    width: 60px;
+    background-color: white;
+}
+.title-front {
+    height: 160px;
+    border-bottom: 2px solid white;
+}
+.title-back h4  {
+    font-size: 2rem;
+    font-weight: 600;
+    font-style: italic;
+    padding-top: 4px;
+}
+#logo-php {
+    position: absolute;
+    top: 220px;
+    left: 10px;
+    box-shadow:  2px 0 5px 0 black;
+    height: 60px;
+    width: 90px;
+    background-color: white;
+    border-radius: 50%;
+}
+#logo-react-native {
+    position: absolute;
+    top: 220px;
+    left: 120px;
+    box-shadow:  2px 0 5px 0 black;
+    height: 60px;
+    width: 90px;
+    background-color: white;
+    
+}
+#logo-wordpress {
+    position: absolute;
+    top: 220px;
+    left: 260px;
+    box-shadow:  2px 0 5px 0 black;
+    height: 60px;
+    width: 90px;
+    background-color: white;
+    
+}
+#logo-symfony {
+    position: absolute;
+    top: 220px;
+    left: 380px;
+    box-shadow:  2px 0 5px 0 black;
+    height: 60px;
+    width: 90px;
+    background-color: white;
+    border-radius: 50%;
+}
+.title-back {
+    border-bottom: 2px solid white;
+    height: 140px;
+}
+.title-skills h4 {
+    font-size: 2rem;
+    font-weight: 600;
+    font-style: italic;
+    padding-top: 4px;
+}
+#logo-vsc {
+    position: absolute;
+    top: 365px;
+    left: 10px;
+    box-shadow:  2px 0 5px 0 black;
+    height: 60px;
+    width: 70px;
+    background-color: black;
+}
+#logo-git {
+    position: absolute;
+    top: 365px;
+    left: 110px;
+    box-shadow:  2px 0 5px 0 black;
+    height: 60px;
+    width: 70px;
+    background-color: white;
+}
+.card-front2, .card-back2 {
+    backface-visibility: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.cardcompétences2:hover .card-inner2 {
+    transform:rotateX(180deg);
+    transition: 0.8s ease-in-out;
+}
