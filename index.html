@@ -19,6 +19,21 @@
 </head>
 
 <body>
+  <!---------- NAVBAR---------- -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark p-4">
+    <div class="container-fluid">
+      <a class="navbar-brand text-light" href="#">Naïm EDOO</a>
+      <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active text-light" aria-current="page" href="#">Profil</a>
+          <a class="nav-link text-light" href="#Experiences">Expériences</a>
+          <a class="nav-link text-light" href="https://Github.com/naimedoo" target="_blank">Github</a>
+          <a class="nav-link text-light">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
    <div class="toggle">
      <input type="checkbox" class="checkbox" id="dark-mode"/>
      <label for="dark-mode" class="label">
@@ -32,26 +47,24 @@
   <header>
     <h1>Bienvenue sur mon portfolio</h1>
     <hr>
-    <h2>Développeur web FULLSTACK</h2>
+    <h2>Développeur web FULL-STACK</h2>
     <div class="container">
       <div class="clearfix">
         <h2> A PROPOS de moi ...</h2>
-        <img src="./ressources/photo-1624823221364-8313c83ad314.jpg" class="col-md-6 float-md-start mb-2 ms-md-2"
-          alt="mon portrait">
-        <p>
-          Après 21 ans dans le domaine du frêt aérien, j'ai décidé de me consacrer à ma passion qui est
-          l'informatique.<br>
-          Pour cela, j'ai opté pour une reconversion professionnelle en intégrant une formation de<b> développeur /
-            intégrateur web et mobile</b>
-          en e-learning avec l'école <u>Digital Campus Live.</u><br>
-          Grâce à mes expériences, la gestion du stress et des priorités sont devenu mon point fort.
-        </p>
+        <!-- <img src="./ressources/images.jpg" class="col-md-6 float-md-start mb-2 ms-md-2"
+          alt="mon portrait"> -->
+          <p>Actuellement en reconversion professionnelle, étant toujours captivé par l’informatique, je me suis tout naturellement orienté vers le développement web.
+            En effet après 21 ans dans le fret aérien, je me suis formé sur différents langages de programmations tels que HTML, CSS, JAVASCRIPT, jQuery, RéactJS en intégrant une formation intensive chez KONEXIO. 
+            J’ai acquis tout au long de cet apprentissage des connaissances solides.
+            Je suis assidu, dynamique, sérieux dans tous ce que j’entreprends.
+            D’autre part, ma bonne capacité d’assimilation est un atout qui me permette de m'investir facilement à des projets. </p>
       </div>
     </div>
   </header>
 
   <!--------------------------------main card---------------------------------------->
-  <main>
+  <main id="Experiences">
+    <div class="blockCard">
     <div class="cardcompétences">
       <div class="card-inner">
         <div class="card-front">
@@ -129,7 +142,15 @@
         </div>
       </div>
     </div>
+  </div>
  </main>
+
+
+
+
+ <footer>
+
+ </footer>
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"

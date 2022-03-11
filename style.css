@@ -8,13 +8,20 @@ html {
 }
 body {
     
-    background: linear-gradient( #485563,#29323c);
-    transition: 0.2s linear;
+    background: linear-gradient( #d9e0e6,#29323c);
+    /* transition: 0.2s linear; */
+}
+nav {
+    position: fixed; 
+ }
+.container-fluid a {
+    font-size: 2rem;
 }
 .toggle {
     position: absolute;
     right: 2rem;
-    top: 2rem;
+    top: 8rem;
+    margin: 0;
 }
 .checkbox {
     display: none;
@@ -51,7 +58,7 @@ body {
     color: #333;
 }
 
-/* MODE NUIT */
+/**************************** MODE NUIT ***********************/
 .dark {
     background: rgb(37, 36, 36)/*linear-gradient(to left,#504f4fd2,rgb(8, 8, 8));*/
 }
@@ -113,22 +120,25 @@ header h2 {
     
     
 }
-.clearfix p {
+ .clearfix p {
     font-size: 2em;
-    margin-top: 9em;
-    border: 2px solid #004e92;
-    margin-left: 55rem;
+    /* background-color: white; */
+    box-shadow: 10px 5px 5px black;
+    border: 1px solid #004e92;
     padding: 2rem;
    
-}
+} 
 
 /* ------------------------ MAIN --------------------------------*/
+.blockCard{
+   margin: 8em;
+}
 /*------------------------- carte 1------------------------------*/
 .cardcompétences  {
-    width: 600px;
-    height: 555px;
+    width: 500px;
+    height: 600px;
     perspective: 700px;
-    margin-left: 2.5em;
+    
 }
 .card-inner h3 {
     font-size: 5em;
@@ -144,13 +154,13 @@ header h2 {
     transform-style: preserve-3d;
 }
 .card-front {
-    background-color:#004e92;
-    color: white;
+    /* background-color:#004e92; */background: linear-gradient( #d9e0e6,#29323c);
+    color: black;
     border-radius: 20px;
 }
 .card-back {
-    background-color:#004e92;
-    color: white;
+    /* background-color:#004e92; */background: linear-gradient( #d9e0e6,#29323c);
+    color: black;
     transform: rotateX(180deg);
     border-radius: 20px;
 }
@@ -202,10 +212,10 @@ header h2 {
 /*------------------------------cartes 2------------------------*/
 
 .cardcompétences2 {
-    width: 600px;
-    height: 555px;
+    width: 500px;
+    height: 600px;
     perspective: 4500px;
-    margin-right: 2.5em;
+    margin-right: 0.8em;
 }
 .card-inner2 h3 {
     font-size: 5em;
@@ -216,7 +226,7 @@ header h2 {
     position: absolute;
     width: 100%;
     left: 100%;
-    margin-left: 60px;
+    margin-left: 120px;
     bottom: 100%;
     height: 100%;
     text-align: center;
@@ -224,13 +234,13 @@ header h2 {
     transform-style:preserve-3d;
 }
 .card-front2 {
-    background-color: #004e92;
-    color: white;
+    /* background-color: #004e92; */ background: linear-gradient( #d9e0e6,#29323c);
+    color: black;
     border-radius: 20px;
 }
 .card-back2 {
-    background-color:#004e92;
-    color: white;
+    /* background-color:#004e92; */  background: linear-gradient( #d9e0e6,#29323c);
+    color: black;
     transform: rotateX(180deg);
     border-radius: 20px;
 }
