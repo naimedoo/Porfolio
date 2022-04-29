@@ -1,159 +1,329 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!------ feuille d style------>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="media.css">
-  <!--------FONT AWESOME-------------->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-   integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-   crossorigin="anonymous">
+  <!DOCTYPE html>
+  <html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!--------- BOOTSTRAP---------->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <title>Portfolio de Naim</title>
-</head>
+    <!------ feuille de style------>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/media.css">
+    <!-- <link rel="stylesheet" href="./CSS/themeDark.css"> -->
 
-<body>
-  <!---------- NAVBAR---------- -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-dark p-4">
-    <div class="container-fluid">
-      <a class="navbar-brand text-light" href="#">Naïm EDOO</a>
-      <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-link active text-light" aria-current="page" href="#">Profil</a>
-          <a class="nav-link text-light" href="#Experiences">Expériences</a>
-          <a class="nav-link text-light" href="https://Github.com/naimedoo" target="_blank">Github</a>
-          <a class="nav-link text-light">Contact</a>
-        </div>
-      </div>
-    </div>
-  </nav>
+    <!--------FONT AWESOME-------------->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+      <!------- Google Font ------>
+      <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital@1&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
 
-   <div class="toggle">
-     <input type="checkbox" class="checkbox" id="dark-mode"/>
-     <label for="dark-mode" class="label">
-       <i class="fas fa-moon"></i>
-       <i class="fas fa-sun"></i>
-       <div class="ball"></div>
-     </label>
-   </div>
-
-  <!----------------------------------header---------------------------->
-  <header>
-    <h1>Bienvenue sur mon portfolio</h1>
-    <hr>
-    <h2>Développeur web FULL-STACK</h2>
-    <div class="container">
-      <div class="clearfix">
-        <h2> A PROPOS de moi ...</h2>
-        <!-- <img src="./ressources/images.jpg" class="col-md-6 float-md-start mb-2 ms-md-2"
-          alt="mon portrait"> -->
-          <p>Actuellement en reconversion professionnelle, étant toujours captivé par l’informatique, je me suis tout naturellement orienté vers le développement web.
-            En effet après 21 ans dans le fret aérien, je me suis formé sur différents langages de programmations tels que HTML, CSS, JAVASCRIPT, jQuery, RéactJS en intégrant une formation intensive chez KONEXIO. 
-            J’ai acquis tout au long de cet apprentissage des connaissances solides.
-            Je suis assidu, dynamique, sérieux dans tous ce que j’entreprends.
-            D’autre part, ma bonne capacité d’assimilation est un atout qui me permette de m'investir facilement à des projets. </p>
-      </div>
-    </div>
-  </header>
-
-  <!--------------------------------main card---------------------------------------->
-  <main id="Experiences">
-    <div class="blockCard">
-    <div class="cardcompétences">
-      <div class="card-inner">
-        <div class="card-front">
-          <h3>Expériences</h3>
-        </div>
-        <div class="card-back">
-          <div class="formation">
-            <h4>Janvier 2021 à Décembre 2021<h4> <br>
-                <p class="para">
-                Formation développeur Web Full Stack chez Konexio</u>
-                </p>
-          </div>
-          <div class="formation">
-            <h4>Janvier 2006 à Septembre 2021</h4><br>
-            <h5>ICTS / SECURUS</h5>
-            <p class="para">
-              Coordinateur de sûreté fret aérien à Roissy Charles de Gaulles
-            </p>
-          </div>
-          <div class="formation">
-            <h4>Aout 2000 à Décembre 2005</h4><br>
-            <h5>ICTS / SECURUS</h5>
-            <p class="para">
-              Opérateur de sûreté fret aérien à Roissy Charles de Gaulles
-            </p>
-          </div>
-          <div class="formation2">
-            <h4>Mars 1999 à Juin 2000</h4><br>
-            <h5>DOLPHIN COMPUTER</h5>
-            <p class="para2">
-              Technicien de maintenance informatique<br>
-              (réparation, montage, assemblage)
-            </p>
+    <!--------- BOOTSTRAP---------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Portfolio de Naim</title>
+  </head>
+  <body>
+    
+      <!----------------------------------header---------------------------->
+      <header id="header">
+        <div class="header-img">
+          <div class="p-center"> 
+            <p id="sayHello">Bonjour</p>
+            <p id="p-name">Je suis Naïm EDOO</p>
+            <p class="para">Développeur web FULL-STACK</p>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="cardcompétences2">
-      <div class="card-inner2">
-        <div class="card-front2">
-          <h3>Compétences</h3>
+                           <!------------------------------ NAVBAR---------------------------- -->
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <span class="material-icons-outlined">
+              <a href="mailto:naim.e2703@gmail.com" target="_blank"><img src="./ressources/mail.svg" id="img-mail"></a>
+              <a href="https://Github.com/naimedoo" target="_blank"><img src="./ressources/logo-github.png" id="img-github"></a>
+              <a href="https://www.linkedin.com/in/na%C3%AFm-edoo/" target="_blank"><img src="./ressources/LinkedIn.png" id="img-linkedin"></a>
+            </span>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+               aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+              </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                <a class="nav-link" href="#compétences">Compétences</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#Projets">Mes Projets</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#contact" tabindex="-1" aria-disabled="true">Contact</a>
+                </li>
+              </ul>
+          </div>
+          </nav>
         </div>
-        <div class="card-back2">
-          <div class="title-front">
-            <h4>Front-end</h4>
-            <hr>
+            <!------------------------------------ profil ---------------------------------->
+        <div class="container">
+          <div class="title-profil">
+            <h1> A PROPOS de moi ...</h1>
           </div>
-          <div class="img-front">
-            <span id="logo">
-            <img src="ressources/html5.png" id="logo-html5" class ="logo" alt="logo-html">
-            <img src="./ressources/logo-bootstrap.png" id="logo-bootstrap" class="logo" alt="logo-bootstrap">
-            <img src="ressources/LOGO-CSS.png" id="logo-css3"  class="logo" alt="logo-css">
-            <img src="ressources/logo-JS.png" id="logo-js" class="logo" alt="logo-JS">
-            <img src="./ressources/react-1-logo-png-transparent.png" id ="logo-react" alt="logo-reactjs">
-          </span>
-          </div>
-            <div class="title-back">
-              <h4>back-end</h4>
-              <hr>
-            <div class="img-back">
-              <img src="./ressources/logo-php.png" id="logo-php" alt="logo-php">
-              <img src="./ressources/logo-react-native.jpg" id="logo-react-native" alt="logo-react-native">
-              <img src="./ressources/WordPress-Logo (1).png" id="logo-wordpress" alt="logo-wordpress">
-              <img src="./ressources/symfony.png" id="logo-symfony" alt="logo-symfony">
+          <div class="content-profil">
+            <div id="img-profil">
+              <img src="/ressources/test-profil.png" class="rounded-circle identity" alt="image de profil">
+             </div>
+            <div class="profil">
+              <p>Actuellement en reconversion professionnelle, étant toujours captivé par l’informatique, je me suis tout
+                 naturellement orienté vers le développement web.
+                 En effet après 21 ans dans le fret aérien, je me suis formé sur différents langages de programmations tels que
+                 HTML, CSS, JAVASCRIPT, jQuery, RéactJS en intégrant une formation intensive chez KONEXIO.
+                 J’ai acquis tout au long de cet apprentissage des connaissances solides.
+                 Je suis assidu, dynamique, sérieux dans tous ce que j’entreprends.
+                 D’autre part, ma bonne capacité d’assimilation est un atout qui me permette de m'investir facilement à des
+                 projets.</p>
             </div>
-            </div>
-            <div class="title-skills">
-              <h4>skills</h4>
-              <hr>
-              <div class="img-skills">
-                <img src="./ressources/logo vsc.jpg" id="logo-vsc" alt="logo-vsc">
-                <img src="./ressources/logo-git.png" id="logo-git" alt="logo-git">
+          </div>
+        </div>
+      </header>
+        
+    <!-------------------------------- MAIN CARD ---------------------------------------->
+    <main>
+      <div class="content-skills" id="compétences">
+        <div class="title-skills">
+          <h2>Mes Compétences</h2>
+        </div>
+        <div class="border"></div>
+        <div class="row col-12 d-flex justify-content-evenly skills">
+          <div class="col-6 col-md-4 card-skills">
+          <h3>Front-end</h3>
+        <div class="front-end">
+          <div class="front">
+            <div>
+              <div class="logo">
+                <img src="ressources/html5.png" id="logo-html5" class="logo-front" alt="logo-html"width="50" height="50">
+              </div>
+              <div class="title-html">
+                <p class="text-light text-center fs-4">HTML</p>
               </div>
             </div>
+            <div>
+              <div class="logo" id="css3">
+                <img src="ressources/LOGO-CSS.png" id="logo-css3" class="logo-front m-2" alt="logo-css" width="50" height="50">
+              </div>
+              <div class="title-css">
+                <p class="text-light text-center fs-4">CSS</p>
+              </div>
+              </div>
+            </div>
+          <div class="front-2">
+            <div>
+              <div class="logo" id="js">
+                <img src="ressources/logo-JS.png" id="logo-js" class="logo-front m-4" alt="logo-JS" width="35" height="35">
+              </div>
+              <div class="title-js">
+                <p class="text-light text-center fs-4">JavaScript</p>
+              </div>
+              </div>
+            <div>
+            <div class="logo" id="reactjs">
+              <img src="./ressources/react-1-logo-png-transparent.png" class="logo-front" alt="logo-reactjs"width="35" height="35">
+            </div>
+            <div class="title-reactJS">
+              <p class="text-light text-center fs-4">ReactJS</p>
+            </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
- </main>
-
-
-
-
- <footer>
-
- </footer>
+      <div class="col-6 col-md-4 skills-back">
+        <div class="card-skills">
+          <h3>Back-end</h3>
+          <div class="back">
+            <div class="back-end">
+              <div>
+                <div class="log-react-native"id="react-native">
+                  <img src="./ressources/logo-react-native.jpg" id="logo-react-native" alt="logo-react-native" width="50" height="40">
+                </div>
+                <div class="title-react-native">
+                  <p class="text-light text-center fs-4">React-native</p>
+                </div>
+              </div>
+              <div>
+              <div class="mongodb"id="mongoDB">
+                <img src="./ressources/mongoDB.png" id="logo-mongoDB" alt="logo-mongoDB" width="50" height="50">
+              </div>
+              <div class="title-mongoDB">
+                <p class="text-light text-center fs-4">MongoDB</p>
+              </div>
+            </div>
+            </div>
+          <div class="back-2">
+            <div>
+              <div class="logo-nodeJS"id="NodeJS">
+                <img src="/ressources/nodeJS.png" id="logo-nodeJS" class="logo-front m-4" alt="logo-nodeJS" width="45" height="45">
+              </div>
+                <div class="title-nodeJS">
+                  <p class="text-light text-center fs-4">NodeJS</p>
+                </div>
+              </div>
+            <div>
+              <div class="logo-expressJS" id="expressJS">
+                <img src="/ressources/expressJS.png" id="logo-expressJS" class="logo-front m-4" alt="logo-expressJS" width="50" height="40">
+              </div>
+              <div class="title-nodeJS">
+                <p class="text-light text-center fs-4">ExpressJS</p>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="row col-12 d-flex justify-content-evenly skills-2">
+        <div class="col-6 col-md-4 card-skills">
+          <h3>Framework et gestion de projet</h3>
+          <div class="framework">
+            <div class="other">
+              <div>
+                <div class="bootstrap" id="logo-bootstrap">
+                  <img src="./ressources/logo-bootstrap.png" class="logo-bootstrap" alt="logo-bootstrap" width="è0" height="70">
+                </div>
+                <div class="title-bootstrap">
+                  <p class="text-light text-center fs-4">BOOTSTRAP</p>
+                </div>
+              </div>
+              <div>
+                <div class="git" id="logo-git">
+                  <img src="./ressources/logo-git-icon.png" alt="logo-git" width="70" height="70">
+                </div>
+                <div class="title-git">
+                  <p class="text-light text-center fs-4">Git</p>
+                </div>
+              </div>
+            </div>
+            <div class="other-2">
+              <div>
+                <div class="github" id="logo-github">
+                  <img src="./ressources/github.png" alt="logo-github" width="55" height="55">
+                </div>
+                <div class="title-gitHub">
+                  <p class="text-light text-center fs-4">GitHub</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 card-skills">
+          <h3>Autres compétences</h3>
+          <div class="otherSkills">
+            <div class="software">
+              <div>
+                <div class="vsc" id="logo-vsc">
+                  <img src="./ressources/logo vsc.jpg" alt="logo-vsc" width="50" height="50">
+                </div>
+                <div class="title-vsc">
+                  <p class="text-light text-center fs-4">Visual studio code</p>
+                </div>
+              </div>
+            </div>
+            <div class="software">
+              <div>
+                <div class="powerpoint" id="logo-powerpoint">
+                  <img src="./ressources/powerpoint.png"  alt="logo-powerpoint" width="50" height="50">
+                </div>
+                <div class="title-powerpoint">
+                  <p class="text-light text-center fs-4">PowerPoint</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="otherSkills-2">
+            <div>
+              <div class="indesign" id="logo-indesign">
+                <img src="./ressources/indesign.png"  alt="logo-Indesign" width="55" height="55">
+              </div>
+              <div class="title-Indesign">
+                <p class="text-light text-center fs-4">Indesign</p>
+              </div>
+            </div>
+          </div>
+         </div>
+        </div>
+        <div class="cv">
+        <a href="./ressources/CV-Naïm.pdf" target="_blank"><button class="btnCV">Telecharger mon CV <span><img src="./ressources/logo-pdf.jpg" class="logo-pdf" alt="logo-pdf"width="20" height="20"></span></button></a>
+      </div>
+      </div>
+      <section id="Projets">
+        <h3 class="portfolio">Portfolio</h3>
+        <p id="para-projet">Découvrez un aperçu des différents projets, que j'ai pu réaliser en formation ou personnellement :</p>
+          <div class="content">
+            <div class="cardFirst">
+              <img src="./ressources/Blog-cuisine.png" id="Blog-cuisine">
+              <div class="Para">
+                <h4 class="text-center fw-bold">Projet de formation</h4>
+                <p class="paraProjet">Pour ce projet , les langages de programmation utlisés sont :
+                  HTML, CSS et le Framework BOOTSTRAP</p>
+                </p>
+                <a href="https://naimedoo.github.io/blog-cuisine/" target="_blank"><button class="btn2 btn-info">Découvrir</a></button>
+              </div>
+              <span>
+              </span>
+            </div>
+            <div class="cardFirst">
+              <div>
+                <img src="./ressources/emomemopng.png" id="Emo-memo" alt="appliaction jeu de mémoire">
+                <h4 class="text-center fw-bold">Projet Emo-memo</h4>
+                <p class="paraProjet">Pour ce projet, Un jeu de mémoire, développé avec ReactJs</p>
+                <button class="btn3 btn-info">Découvrir</button>
+              </div>
+            </div>
+            <div class="cardFirst">
+              <img src="./ressources/App-meteo (2).png" id="App-meteo" alt="application météo de la semaine">
+              <h4 class="text-center fw-bold">Projet personnel</h4>
+              <p class="paraProjet">Une application météo, développé avec HTML, CSS et JavaScript</p>
+              <a href="https://naimedoo.github.io/App-meteo/" target="_blank"><button class="btn4 btn-info text-center p-2">Découvrir</a></button>
+            </div>
+          </div>
+      </section>
+      <section id="contact">
+          <div class="img-contact" id="contact-me">
+            <!-- <img src="./ressources/img-form.jpg" id="img-form" alt="image de fond pour le formulaire de contact"> -->
+            <div class="background-form">
+              <div class="title-center">
+              <P id="para-contact">Démarrons un projet ensemble, n'hésitez pas à me contacter !</P>
+            <form>
+            <div class="col-6 offset-3 p-4">
+             <input type="Nom" class="form-control line" id="exampleFormControlInput1" placeholder="Nom">
+            </div>
+            <div class="col-6 offset-3 p-4">
+              <input type="email" class="form-control line" id="exampleFormControlInput1" placeholder="email">
+            </div>
+            <div class="col-6 offset-3 p-4">
+              <textarea class="form-control line" id="exampleFormControlTextarea1" rows="3" placeholder="votre message"></textarea>
+            </div>
+            <button class="btn5 btn-dark p-3 fs-4" type="submit">Envoyer votre message</button>
+          </form>
+        </div>
+          </div>
+        </section>
+    </main>
+    <footer>
+      <div class="footer">  
+        <div class="line-footer">
+        <div class="link-footer">
+        <a href="https://Github.com/naimedoo" target="_blank"><img src="./ressources/logo-github.png" id="github-footer"></a>
+        <a href="https://www.linkedin.com/in/na%C3%AFm-edoo/" target="_blank"><img src="./ressources/LinkedIn.png" id="linkedin-footer"></a>
+        </div>
+        <div class="copyright">
+          <p id="sign-footer">CopyrIght &copy 2022 Naïm EDOO - développeur Web junior</p>
+        </div>
+        <div class="back-page">
+          <a href="#header"><img src="./ressources/arrow.png" alt="retour haut de page"></a>
+        </div>
+      </div>
+      </div>
+    </footer>
     <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-     crossorigin="anonymous"></script>
-</body>
-</html>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+    </body>
+  </html>

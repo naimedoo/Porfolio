@@ -1,0 +1,556 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 10px;
+}
+body {
+    background-color: #4682B4!important;
+    height: 100% !important;
+    /* width: 100vw; */
+    scroll-behavior:smooth;
+}
+nav {
+    background: linear-gradient(45deg,#2269c3,#ccd1dd);
+    color: black;
+    padding: 2px!important;
+}
+.collapse ul  {
+    margin-right: 45px!important;
+}
+#img-github {
+    width: 31px;
+}
+#img-mail {
+    width: 32px;
+}
+#img-linkedin {
+    width: 32px;
+}
+
+/* -------------------------- HEADER -----------------------------*/
+   
+
+
+
+ .header-img {
+     background-image: url("../ressources/header-img.jpg")!important;
+     background-repeat: no-repeat;
+     background-size: cover;
+     /* width: 100vw; */
+     background-attachment: fixed;
+     background-position: center;
+     opacity:0.66;
+ }
+.header-img p {
+    text-align: center;
+    padding-top:185px;
+    font-family:'lato, sans-serif';
+    font-weight: bold;
+    font-style: italic;
+    font-size: 45px;
+    color: white;
+   
+}
+.container-fluid {
+    width: 100%;
+}
+.btnCV {
+   
+    background: #98c0ed;
+    width: 190px;
+    padding: 5px;
+    font-size: 16px;
+    margin-top: 50px;
+    border-radius: 10%;
+    font-weight: 500;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+.cv {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.btnCV:hover {
+    background-color: #053656;
+    color: white;
+}
+.logo-pdf {
+    background: black;
+    color: black;
+    
+}
+.header-img a  {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 90px;
+} 
+.p-center {
+    padding: 10px;
+    padding-bottom: 229px;
+    /* animation: Anim 2s linear 2s 1 normal backwards; */
+}
+#sayHello {
+    padding-bottom: 0px;
+}
+#p-name {
+    animation: Anim 1s linear 1s 1 normal backwards;
+    padding-top: 0;
+}
+
+p.para {
+    padding-top: 0px;
+    animation: Anim 1s linear 2s 1 normal backwards;
+   
+   
+}
+@keyframes Anim {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+      }
+    50% {
+      opacity:0.66;
+      transform:translate(50px)
+        }
+     /* 75%{
+          opacity:0.66;
+          transform:translate(25px)
+         }   */
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.container-fluid a {
+    font-size: 2rem;
+    color: black;
+    font-weight: bold;
+}
+.title-profil h1 {
+    text-align: center;
+    font-size: 3em;
+    font-family: "Impact", "Haettenschweiler", 'Arial Narrow Bold', sans-serif;
+    font-weight: 500;
+    border: 3px solid black;
+    width: 260px;
+    
+}
+.container {
+    margin: 80px;
+    /* padding-top: 0px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items:center;
+   
+}
+.identity {
+    width: 50%;
+    padding-top: 45px;
+   
+}
+.content-profil {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 20px;
+}
+ .profil {
+    font-size: 2em;
+    /* padding: 1.5rem; */
+    padding-top: 50px;
+    font-weight:600;
+    width: 45%;
+} 
+/************************** SKILLS ********************************/
+/************************* Front-end *******************************/
+.content-skills {
+    background-color: white;
+    width: 100vw;
+    height: 100%;
+    padding-bottom: 150px;
+    margin: 0;
+}
+.title-skills h2 {
+    text-align: center;
+    font-family: "Montserrat alternates";
+    font-weight: 600;
+    font-size: 4.5em;
+    padding-top: 30px;
+   /* text-decoration:underline; */
+}
+/* .border {
+    border:20px solid black;
+    height: 2%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.skills  {
+    /* display: flex;
+    justify-content: space-around;
+    align-items: center; */
+    padding-bottom: 130px;
+    padding-top: 150px;
+    padding-right: 0px;
+    
+}
+.skills-2  {
+    /* display: flex;
+    justify-content: space-around;
+    align-items: center; */
+    padding-right: 0px;
+  
+}
+.card-skills {
+    width: 400px;
+    height: 360px;
+    background: #183650;
+    box-shadow: 0px 0px 5px 1px #053656;
+    border: 2px solid black;
+    border-radius: 10%;
+}
+.card-skills h3 {
+    text-align: center;
+    color: white;
+    font-size: 2.2em;
+    padding-top: 10px;
+}
+.front-end {
+   padding-top:20px;
+}
+.front {
+    display: flex;
+    justify-content: space-around;
+     align-items: center;
+}
+.logo {
+    border: 3px solid white;
+    border-radius: 50%;
+    padding: 20px;
+}
+#logo-html5{
+    padding-top: 8px;
+}
+.front-2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#css3 {
+    padding: 15px!important;
+}
+#js {
+    border: 3px solid white;
+    border-radius: 50%;
+    padding: 11px;
+}
+#reactjs {
+    border: 3px solid white;
+    border-radius: 50%;
+    padding: 27px!important;
+}
+/************************** back-end  *****************************/
+.back-end {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.back {
+    padding-top: 20px;
+}
+#react-native {
+    border: 3px solid white;
+    border-radius: 50%;
+    padding: 24px!important;
+    padding-top: 8px;
+}
+#mongoDB {
+    border: 3px solid white;
+    border-radius: 50%;
+    padding: 22px!important;
+    padding-top: 8px;
+}
+.back-2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+#NodeJS {
+    border: 3px solid white;
+    border-radius: 50%;
+    padding: 10px!important;
+    padding-top: 8px;
+}
+#expressJS {
+    border: 3px solid white;
+    border-radius: 50%;
+    padding: 13px!important;
+    padding-top: 8px;
+}
+/*************************** FRAMEWORK ****************************/
+.other {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 16px;
+}
+#logo-bootstrap {
+    border: 3px solid white;
+    border-radius: 50%;
+    padding: 13px!important;
+    padding-top: 8px;
+}
+#logo-git {
+    border: 3px solid white;
+    border-radius: 50%;
+    padding: 15px!important;
+    padding-top: 8px;
+}
+.other-2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#logo-github {
+    border: 3px solid white;
+    border-radius: 50%;
+    padding: 19px!important;
+    padding-top: 2px;
+}
+/***************** Autres compétences  ****************************/
+
+.otherSkills {
+    display: flex;
+    justify-content: space-around;
+    align-items:flex-start;
+    padding-top: 8px;
+}
+#logo-vsc {
+    border: 3px solid white;
+    border-radius: 50%;
+    padding: 28px!important;
+    padding-top: 2px;
+}
+#logo-powerpoint {
+    border: 3px solid white;
+    border-radius: 50%;
+    padding: 28px!important;
+    padding-top: 2px;
+}
+.otherSkills-2 {
+    display: flex;
+    justify-content: space-around;
+    align-items:flex-start;
+    padding-top: 8px;
+}
+#logo-indesign {
+    border: 3px solid white;
+    border-radius: 50%;
+    padding: 28px!important;
+    padding-top: 2px;
+}
+
+
+/******************************** PROJETS *****************************************/
+.portfolio {
+    font-size: 4.5em;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 45px;
+    color: white;
+    font-family: "Montserrat alternates";
+}
+#para-projet {
+    font-size: 2.3em;
+    font-weight: 500;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    padding-top: 30px;
+    color: white;
+}
+.content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px;
+}
+ .cardFirst:hover {
+    background: linear-gradient(to left,#2269c3,#ccd1dd); 
+    opacity: 0.66;
+    transform: scale(1.1);   
+ } 
+
+.cardFirst {
+    width: 350px;
+    height: 360px;
+    background-color: white;
+    margin-top: 80px;
+    border-radius: 0 0 10% 10%;
+    animation: myAnim 1s linear 2s 1 normal backwards;
+
+}
+.btn2 {
+    width: 85px;
+    height: 25px;
+    margin-left: 125px;
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: #98c0ed!important;
+}
+.btn2 a {
+    text-decoration: none;
+    color: black;
+}
+.btn3 {
+    width: 85px;
+    height: 25px;
+    margin-left: 125px;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 20px;
+    background-color: #98c0ed!important;
+}
+#Blog-cuisine {
+    width: 340px;
+    height: 210px;
+    margin: 6px;
+}
+.paraProjet {
+    font-size: 1.5em;
+    font-family: "Lato", sans-serif;
+    text-align: center;
+}
+#para-projet {
+    font-family: "Teko";
+    font-size: 3.5em;
+}
+@keyframes myAnim {
+  0% {
+      opacity: 0;
+      transform: translateY(100px);
+    }
+  50% {
+    opacity:0.33;
+    transform:translateY(50px)
+      }
+  75%{
+        opacity:0.66;
+        transform:translateY(25px)
+      }
+  100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  #Emo-memo {
+    width: 340px;
+    height: 210px;
+    margin: 6px;
+  }
+  #App-meteo {
+    width: 340px;
+    height: 210px;
+    margin: 6px;
+  }
+.btn4 {
+    width: 85px;
+    height: 27px;
+    margin-left: 125px;
+    margin-top: 29px;
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: #98c0ed!important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn4 a {
+    text-decoration: none;
+    color: black;
+
+}
+.img-contact { 
+    /* background: rgb(58, 105, 138); */
+    background-image: url("/ressources/contact-img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 118vh;
+    margin-top: 300px; 
+}
+ .background-form {
+   text-align: center;
+   font-family: 'Montserrat Alternates',sans-serif;
+   font-style: italic;
+   padding-top: 40px;
+   font-size: 35px;
+   background-color: rgb(23, 81, 85);
+   opacity: 0.66;
+   height: 118vh;
+   color: white;
+ }
+
+.line {
+    padding: 1.375rem 0.75rem!important;
+    font-size: 1.7rem !important;
+}
+form {
+    padding-top: 65px;
+}
+.btn5 {
+    width: 280px!important;
+}
+
+/********* FOOTER  ***************/
+.footer {
+    background: linear-gradient(to left,#2269c3,#ccd1dd);
+    padding: 0;
+    margin-top:0;
+}
+.link-footer {
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+}
+#github-footer {
+    width: 25px;
+}
+#linkedin-footer {
+    width: 30px;
+}
+.line-footer {
+    display: flex;
+    justify-content:space-around;
+    align-content:center;
+    height: 90px;
+    padding-left: 30px;
+    padding-top: 20px;
+}    
+.back-page {
+    display: flex;
+    justify-content:flex-end;
+    align-items: flex-end;
+    padding-right: 30px;
+    padding-bottom: 20px;
+} 
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#sign-footer {
+    font-size: 1.8em;
+    font-weight: 600;
+}
