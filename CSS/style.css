@@ -92,8 +92,8 @@ nav {
     padding-bottom: 90px;
 } 
 .p-center {
-    padding: 10px;
-    padding-bottom: 229px;
+    padding: 10%;
+    padding-bottom: 18%;
     /* animation: Anim 2s linear 2s 1 normal backwards; */
 }
 #sayHello {
@@ -133,6 +133,7 @@ p.para {
     color: black;
     font-weight: bold;
 }
+
 .title-profil h1 {
     text-align: center;
     font-size: 3em;
@@ -140,6 +141,7 @@ p.para {
     font-weight: 500;
     border: 3px solid black;
     width: 260px;
+
     
 }
 .container {
@@ -160,15 +162,21 @@ p.para {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding-top: 20px;
+    padding-bottom: 7%;
 }
  .profil {
-    font-size: 2em;
+    font-size: 2.5rem;
     /* padding: 1.5rem; */
-    padding-top: 50px;
+    margin-top: 10%;
     font-weight:600;
-    width: 45%;
+    width: 100%;
+    height: 30vh;
 } 
+.text-profil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /************************** SKILLS ********************************/
 /************************* Front-end *******************************/
 .content-skills {
@@ -212,8 +220,8 @@ p.para {
   
 }
 .card-skills {
-    width: 400px;
-    height: 360px;
+    width: 100%;
+    height: 100%;
     background: #183650;
     box-shadow: 0px 0px 5px 1px #053656;
     border: 2px solid black;
@@ -260,6 +268,14 @@ p.para {
     padding: 27px!important;
 }
 /************************** back-end  *****************************/
+.card-back {
+    width: 100%;
+    height: 100%;
+    background: #183650;
+    box-shadow: 0px 0px 5px 1px #053656;
+    border: 2px solid black;
+    border-radius: 10%;
+}
 .back-end {
     display: flex;
     justify-content: space-around;
@@ -486,18 +502,18 @@ p.para {
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
-    height: 118vh;
+    height: 100vh;
     margin-top: 300px; 
 }
  .background-form {
    text-align: center;
    font-family: 'Montserrat Alternates',sans-serif;
    font-style: italic;
-   padding-top: 40px;
+   padding-top: 10%;
    font-size: 35px;
    background-color: rgb(23, 81, 85);
    opacity: 0.66;
-   height: 118vh;
+   height: 100vh;
    color: white;
  }
 
