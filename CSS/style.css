@@ -378,6 +378,50 @@ p.para {
 
 
 /******************************** PROJETS *****************************************/
+
+.works_container  {
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+margin-top: 60px;
+}
+.works_img {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.5rem;
+}
+.works_data {
+    position: absolute;
+    bottom: -100%;
+    width:100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* background: black; */
+    background: linear-gradient(to left,#2269c3,#ccd1dd);
+    opacity: 0.99;
+    border-radius: 0.5rem;
+    transition:0.3s
+}
+.works_link {
+    display: inline-flex;
+    font-size: 1.7rem;
+    /* background-color:linear-gradient(to left,#2269c3,#ccd1dd); */
+    color: white;
+    padding: 0.5rem;
+    margin-bottom: 80px;
+}
+.works_title {
+    font-size:2rem;
+    color:black ;
+    font-weight: 600;
+
+}
+.works_img:hover .works_data {
+    bottom: 0;
+}
 .portfolio {
     font-size: 4.5em;
     font-weight: bold;
@@ -386,7 +430,7 @@ p.para {
     color: white;
     font-family: "Montserrat alternates";
 }
-#para-projet {
+ #para-projet {
     font-size: 2.3em;
     font-weight: 500;
     text-align: center;
@@ -394,107 +438,21 @@ p.para {
     padding-top: 30px;
     color: white;
 }
-.content {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 10px;
-}
- .cardFirst:hover {
-    background: linear-gradient(to left,#2269c3,#ccd1dd); 
-    opacity: 0.66;
-    transform: scale(1.1);   
- } 
-
-.cardFirst {
-    width: 350px;
-    height: 360px;
-    background-color: white;
-    margin-top: 80px;
-    border-radius: 0 0 10% 10%;
-    animation: myAnim 1s linear 2s 1 normal backwards;
-
-}
-.btn2 {
-    width: 85px;
-    height: 25px;
-    margin-left: 125px;
-    font-size: 1.2em;
-    font-weight: bold;
-    background-color: #98c0ed!important;
-}
-.btn2 a {
-    text-decoration: none;
-    color: black;
-}
-.btn3 {
-    width: 85px;
-    height: 25px;
-    margin-left: 125px;
-    font-size: 1.2em;
-    font-weight: bold;
-    margin-top: 20px;
-    background-color: #98c0ed!important;
-}
 #Blog-cuisine {
-    width: 340px;
-    height: 210px;
+    width: 500px;
+    height: 350px;
     margin: 6px;
 }
-.paraProjet {
-    font-size: 1.5em;
-    font-family: "Lato", sans-serif;
-    text-align: center;
-}
-#para-projet {
-    font-family: "Teko";
-    font-size: 3.5em;
-}
-@keyframes myAnim {
-  0% {
-      opacity: 0;
-      transform: translateY(100px);
-    }
-  50% {
-    opacity:0.33;
-    transform:translateY(50px)
-      }
-  75%{
-        opacity:0.66;
-        transform:translateY(25px)
-      }
-  100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-  #Emo-memo {
-    width: 340px;
-    height: 210px;
+ #Emo-memo {
+    width: 500px;
+    height: 350px;
     margin: 6px;
   }
   #App-meteo {
-    width: 340px;
-    height: 210px;
+    width: 500px;
+    height: 350px;
     margin: 6px;
-  }
-.btn4 {
-    width: 85px;
-    height: 27px;
-    margin-left: 125px;
-    margin-top: 29px;
-    font-size: 1.2em;
-    font-weight: bold;
-    background-color: #98c0ed!important;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.btn4 a {
-    text-decoration: none;
-    color: black;
-
-}
+ }
 .img-contact { 
     /* background: rgb(58, 105, 138); */
     background-image: url("/ressources/contact-img.jpg");
