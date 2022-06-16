@@ -225,7 +225,7 @@ p.para {
     background: #183650;
     box-shadow: 0px 0px 5px 1px #053656;
     border: 2px solid black;
-    border-radius: 10%;
+    border-radius: 30px;
 }
 .card-skills h3 {
     text-align: center;
@@ -274,7 +274,13 @@ p.para {
     background: #183650;
     box-shadow: 0px 0px 5px 1px #053656;
     border: 2px solid black;
-    border-radius: 10%;
+    border-radius: 30px;
+}
+.card-back h3 {
+    text-align: center;
+    color: white;
+    font-size: 2.2em;
+    padding-top: 10px;   
 }
 .back-end {
     display: flex;
